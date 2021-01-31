@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big theatre</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    Hello world
-
+    <div class="wrapper">
+        <header class="header">
+            <div class="md-container header__container">
+                <div class="header__menu">
+                    <a href="#" class="header__item">Главная</a>
+                    <a href="#" class="header__item">О театре</a>
+                    <a href="#" class="header__item">Наши постановки</a>
+                    <a href="#" class="header__item">Партнеры театра</a>
+                    <a href="#" class="header__item">Контакты</a>
+                </div>
+                <div class="header__phone">+7 495 123-45-67</div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="main-screen">
+                <div class="main-screen__bg"></div>
+                <div class="md-container main-screen__container">
+                    <div class="main-screen__info">
+                        <div class="main-screen__title">Большой театр</div>
+                        <div class="main-screen__text">
+                            Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
+                        </div>
+                        <div class="btn-primary main-screen__btn">
+                            Афиша
+                        </div>
+                    </div>
+                    <div class="new-shows">
+                        <div class="show-display">
+                            <div class="show-diplay__bg"></div>
+                            <div class="show-diplay__slider">
+                                <img src="./images/new-show.png" alt="new show">
+                            </div>
+                        </div>
+                        <div class="new-shows__menu">
+                            <div class="new-shows__btn new-shows__btn_left">
+                                <div class="new-shows__arrow">
+                                    <img src="./images/left-arrow.svg" alt="left arrow">
+                                </div>
+                                <div class="new-shows__text">Пред</div> 
+                            </div>
+                            <div class="new-shows__btn new-shows__btn_right">
+                                <div class="new-shows__text">След</div>
+                                <div class="new-shows__arrow">
+                                    <img src="./images/right-arrow.svg" alt="right arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,238 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.md-container {
+    width: 100%;
+    max-width: 1100px;
+    /* padding: 0 30px; */
+}
+
+.btn-primary {
+    background: #D1A954;
+    color: white;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 12.5px 47px;
+    cursor: pointer;
+}
+
+.wrapper {
+    position: relative;
+    background-color: #333333;
+    color: white;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: 300; */
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    z-index: 11;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.header__item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 63px;
+    cursor: pointer;
+}
+
+.header__phone {
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    /* letter-spacing: 0.05em; */
+    text-transform: uppercase;
+    margin-top: 1px;
+}
+
+.header__phone::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: calc(0% - 2px);
+    width: 100%;
+    border-bottom: 2px solid #D1A954;
+}
+
+
+.main-screen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 267px 0 198px 0;
+}
+
+.main-screen__bg {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-main.png");
+    background-size: cover;
+}
+
+.main-screen__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    opacity: 0.85;
+}
+
+.main-screen__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1035px;
+    padding-right: 75px;
+}
+
+.main-screen__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+
+.main-screen__title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.main-screen__text {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 540px;
+}
+
+.main-screen__btn {
+    margin-top: 40px;
+}
+
+.new-shows {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.show-display {
+    position: relative;
+    width: 350px;
+    height: 490px;
+}
+
+.show-diplay__bg {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/new-show.png");
+}
+
+.show-diplay__bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #D1A954;
+    opacity: 0.85;
+}
+
+.show-diplay__slider {
+    position: relative;
+}
+
+.new-shows__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-left: -25px;
+    margin-right: -45px;
+}
+
+.new-shows__btn {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 0;
+}
+
+.new-shows__arrow {
+    width: 40px;
+    height: 25px;
+    padding: 0 25px;
+}
+
+.new-shows__text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.new-shows__btn_left .new-shows__text {
+    color: #C4C4C4;
+}
