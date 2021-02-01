@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="wrapper">
@@ -71,8 +71,19 @@
                     <div class="new-shows">
                         <div class="show-display">
                             <div class="show-diplay__bg"></div>
-                            <div class="show-diplay__slider">
-                                <img src="./images/new-show.png" alt="new show">
+                            <div id="show-display" class="show-diplay__slider">
+                                <div class="show-display_item">
+                                    <img src="./images/new-show.png" alt="new show">
+                                </div>
+                                <div class="show-display_item">
+                                    <img src="./images/new-show2.jpg" alt="new show">
+                                </div>
+                                <div class="show-display_item">
+                                    <img src="./images/new-show.png" alt="new show">
+                                </div>
+                                <div class="show-display_item">
+                                    <img src="./images/new-show2.jpg" alt="new show">
+                                </div>
                             </div>
                         </div>
                         <div class="new-shows__menu">
@@ -92,8 +103,228 @@
                     </div>
                 </div>
             </div>
+            <div class="about">
+                <div class="md-container about__container">
+                    <div class="title"><span class="gold-text">О</span> театре</div>
+                    <div class="about__content">
+                        <div class="about__description">
+                            <div class="about__title">Самый лучший театр СПБ</div>
+                            <div class="about__text">
+                                Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.
+                            </div>
+                        </div>
+                        <div class="about__numbers">
+                            <div class="about__title">немного о цифрах</div>
+                            <div class="benefit about__benefit">
+                                <div class="benefit__img">
+                                    <img src="./images/armchair.svg" alt="armchair">
+                                </div>
+                                <div class="benefit__text">
+                                    <span class="gold-text">1600</span> посадочный мест
+                                </div>
+                            </div>
+                            <div class="benefit about__benefit">
+                                <div class="benefit__img">
+                                    <img src="./images/small-theate.svg" alt="theatre">
+                                </div>
+                                <div class="benefit__text">
+                                    <span class="gold-text">350</span> лет истории
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__img-block">
+                            <img src="./images/about-theatre.png" alt="theatre">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shows">
+                <div class="shows__container">
+                    <div class="title"><span class="gold-text">наши</span> постановки</div>
+                    <div id="shows-slider" class="shows__list">
+                        <div class="show">
+                            <div class="show__bg">
+                                <div class="show__title">ОСКАР 2020</div>
+                                <div class="show__date">сентябрь 2020</div>
+                            </div>
+                            <div class="show__picture">
+                                <img src="./images/show1.png" alt="show 1">
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="show__bg">
+                                <div class="show__title">Гамлет</div>
+                                <div class="show__date">август 2020</div>
+                            </div>
+                            <div class="show__picture">
+                                <img src="./images/show2.png" alt="show 2">
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="show__bg">
+                                <div class="show__title">Золотой грамофон</div>
+                                <div class="show__date">июль 2020</div>
+                            </div>
+                            <div class="show__picture">
+                                <img src="./images/show3.png" alt="show 3">
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="show__bg">
+                                <div class="show__title">Щелкунчик</div>
+                                <div class="show__date">май 2020</div>
+                            </div>
+                            <div class="show__picture">
+                                <img src="./images/show4.png" alt="show 4">
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="show__bg">
+                                <div class="show__title">ОСКАР 2020</div>
+                                <div class="show__date">сентябрь 2020</div>
+                            </div>
+                            <div class="show__picture">
+                                <img src="./images/show1.png" alt="show 1">
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="show__bg">
+                                <div class="show__title">Гамлет</div>
+                                <div class="show__date">август 2020</div>
+                            </div>
+                            <div class="show__picture">
+                                <img src="./images/show2.png" alt="show 2">
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="show__bg">
+                                <div class="show__title">Золотой грамофон</div>
+                                <div class="show__date">июль 2020</div>
+                            </div>
+                            <div class="show__picture">
+                                <img src="./images/show3.png" alt="show 3">
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="show__bg">
+                                <div class="show__title">Щелкунчик</div>
+                                <div class="show__date">май 2020</div>
+                            </div>
+                            <div class="show__picture">
+                                <img src="./images/show4.png" alt="show 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="awards">
+                <div class="md-container awards__container">
+                    <div class="awards__bg"></div>
+                    <div class="awards__content">
+                        <div class="awards__years-list">
+                            <div class="awards__year">2018</div>
+                            <div class="awards__year">2019</div>
+                            <div class="awards__year">2020</div>
+                        </div>
+                        <div class="awards__best">
+                            <div class="awards_stars">
+                                <div class="awards__star">
+                                    <img src="./images/star.svg" alt="star">
+                                </div>
+                                <div class="awards__star">
+                                    <img src="./images/star.svg" alt="star">
+                                </div>
+                                <div class="awards__star">
+                                    <img src="./images/star.svg" alt="star">
+                                </div>
+                                <div class="awards__star">
+                                    <img src="./images/star.svg" alt="star">
+                                </div>
+                                <div class="awards__star">
+                                    <img src="./images/star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="awards__text">
+                                Лучший театр<br>
+                                по мнению театральных критиков Парижа
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="md-container">
+                    <div class="title">
+                        <span class="gold-text">партнеры</span> театра
+                    </div>
+                    <div class="partners__list">
+                        <div class="partners__item">
+                            <img src="./images/partner-logo.svg" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="./images/partner-logo.svg" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="./images/partner-logo.svg" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="./images/partner-logo.svg" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="./images/partner-logo.svg" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="./images/partner-logo.svg" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="./images/partner-logo.svg" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="./images/partner-logo.svg" alt="partner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="donate">
+                <div class="md-container">
+                    <div class="title">
+                        <span class="gold-text">стать</span> меценатом
+                    </div>
+                    <div class="donate__content">
+                        <div class="donate__contacts">
+                            <div class="donate__contact">+7 (812) 123-45-55</div>
+                            <div class="donate__contact">+7 (812) 123-45-66</div>
+                            <div class="donate__contact">info@theater.ru</div>
+                            <div class="donate__contact">г. санкт-петербург, невский 140</div>
+                        </div>
+                        <div class="donate-form">
+                            <div class="donate-form__inputs">
+                                <div class="donate-form__sponsor-info">
+                                    <input type="text" class="donate-form__name donate-form__input" placeholder="Имя">
+                                    <input type="text" class="donate-form__company donate-form__input" placeholder="Компания">
+                                    <input type="tel" class="donate-form__phone donate-form__input" placeholder="Телефон">
+                                    <input type="email" class="donate-form__email donate-form__input" placeholder="E-mail">
+                                </div>
+                                <textarea type="text" class="donate-form__message donate-form__input" placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="donate-form__bottom">
+                                <div class="donate-form__info">
+                                    * Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.
+                                </div>
+                                <div class="btn-primary donate-form__btn">отправить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="md-container footer__container">
+                <div class="footer__left">(с) Все права защищены. Большой театр. 2020</div>
+                <div class="footer__right">Разработано d-e-n.ru</div>
+            </div>
+        </footer>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
