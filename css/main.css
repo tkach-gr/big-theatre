@@ -22,7 +22,6 @@ a {
 .md-container {
     width: 100%;
     max-width: 1100px;
-    /* padding: 0 30px; */
 }
 
 .title {
@@ -56,6 +55,7 @@ a {
     text-transform: uppercase;
     padding: 12.5px 47px;
     cursor: pointer;
+    user-select: none;
     transition: 
         background-color 0.3s ease,
         color 0.3s ease;
@@ -285,7 +285,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1035px;
+    max-width: 1025px;
     padding-right: 75px;
 }
 
@@ -576,15 +576,38 @@ a {
 }
 
 .awards {
+    position: relative;
     display: flex;
     justify-content: center;
     padding: 75px;
+    overflow: hidden;
 }
 
 .awards__container {
     position: relative;
 }
 
+.awards__full-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -3%;
+    width: 106%;
+    height: 100%;
+    background-image: url("../images/bg-awards.png");
+    background-size: cover;
+}
+
+.awards__full-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    opacity: 0.9;
+}
 
 .awards__bg {
     position: absolute;
@@ -665,13 +688,28 @@ a {
     padding: 0 33px;
 }
 
+.partners__list.slider {
+    overflow: hidden;
+}
+
+.partners__list .slider__point {
+    width: 278px;
+    height: 272px;
+    margin-left: -39px;
+}
+
+.partners__column {
+    display: flex;
+    flex-direction: column;
+}
+
 .partners__item {
     padding: 0 39px;
     width: 200px;
     height: 96px;
 }
 
-.partners__item:nth-child(n + 5) {
+.partners__item:last-child {
     margin-top: 80px;
 }
 

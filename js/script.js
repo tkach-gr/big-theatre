@@ -410,3 +410,8 @@ sliderBuilder.build();
 let showDisplay = document.getElementById("show-display");
 let showSliderBuilder = new SliderBuilder(showDisplay);
 showSliderBuilder.build();
+
+let partnersList = document.getElementById("partners-list");
+let partnersListBuilder = new SliderBuilder(partnersList, 1340);
+partnersListBuilder.build();
+
