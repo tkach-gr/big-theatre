@@ -6,6 +6,7 @@
     <title>Big theatre</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/tablet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
@@ -14,16 +15,55 @@
     <div class="wrapper">
         <header class="header">
             <div class="md-container header__container">
+                <div id="menu-open" class="menu-btn">
+                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66675 18.3333H26.6667V21.6667H6.66675V18.3333ZM6.66675 10H33.3334V13.3333H6.66675V10ZM6.66675 30H18.7251V26.6667H6.66675V30Z"/>
+                    </svg>
+                </div>
                 <div class="header__menu">
-                    <a href="#" class="header__item">Главная</a>
-                    <a href="#" class="header__item">О театре</a>
-                    <a href="#" class="header__item">Наши постановки</a>
-                    <a href="#" class="header__item">Партнеры театра</a>
-                    <a href="#" class="header__item">Контакты</a>
+                    <a href="#main" class="header__item">Главная</a>
+                    <a href="#about" class="header__item">О театре</a>
+                    <a href="#shows" class="header__item">Наши постановки</a>
+                    <a href="#partners" class="header__item">Партнеры театра</a>
+                    <a href="#contacts" class="header__item">Контакты</a>
                 </div>
                 <div class="header__phone">+7 495 123-45-67</div>
             </div>
         </header>
+        <div id="menu" class="menu">
+            <div class="menu__btn">
+                <div id="menu-close" class="menu__close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4L14.6 16L8 22.6L9.4 24L16 17.4L22.6 24L24 22.6L17.4 16L24 9.4Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="menu__links">
+                <a href="#main" class="menu__link">Главная</a>
+                <a href="#about" class="menu__link">о театре</a>
+                <a href="#shows" class="menu__link">Наши постановки</a>
+                <a href="#partners" class="menu__link">партнеры театра</a>
+                <a href="#contacts" class="menu__link">контакты</a>
+            </div>
+            <div class="menu__socials">
+                <div class="menu__row">
+                    <a href="#" class="menu__social">
+                        <img src="./images/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#" class="menu__social">
+                        <img src="./images/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <div class="menu__row">
+                    <a href="#" class="menu__social">
+                        <img src="./images/youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#" class="menu__social">
+                        <img src="./images/vk.svg" alt="vk">
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="socials">
             <div class="socials__info">
                 <div class="socials__text">
@@ -57,7 +97,7 @@
             </div>
         </div>
         <main class="content">
-            <div class="main-screen">
+            <div id="main" class="main-screen">
                 <div class="main-screen__bg"></div>
                 <div class="md-container main-screen__container">
                     <div class="main-screen__info">
@@ -104,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about">
+            <div id="about" class="about">
                 <div class="md-container about__container">
                     <div class="title"><span class="gold-text">О</span> театре</div>
                     <div class="about__content">
@@ -139,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="shows">
+            <div id="shows" class="shows">
                 <div class="shows__container">
                     <div class="title"><span class="gold-text">наши</span> постановки</div>
                     <div id="shows-slider" class="shows__list">
@@ -254,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            <div class="partners">
+            <div id="partners" class="partners">
                 <div class="md-container">
                     <div class="title">
                         <span class="gold-text">партнеры</span> театра
@@ -295,7 +335,7 @@
                     </div>
                 </div>
             </div>
-            <div class="donate">
+            <div id="contacts" class="donate">
                 <div class="md-container">
                     <div class="title">
                         <span class="gold-text">стать</span> меценатом

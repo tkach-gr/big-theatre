@@ -83,6 +83,11 @@
         display: none;
     }
 
+    .partners__list {
+        margin: 100px 0 0 0;
+        padding: 0;
+    }
+
     .donate__content {
         flex-direction: column-reverse;
     }

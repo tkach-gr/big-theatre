@@ -415,3 +415,21 @@ let partnersList = document.getElementById("partners-list");
 let partnersListBuilder = new SliderBuilder(partnersList, 1340);
 partnersListBuilder.build();
 
+
+let menuOpen = document.getElementById("menu-open");
+let menuClose = document.getElementById("menu-close");
+let menu = document.getElementById("menu");
+
+menuOpen.addEventListener("click", () => {
+    menu.classList.add("visible");
+    menuOpen.classList.add("pressed");
+    menuClose.classList.remove("pressed");
+    document.body.classList.add("hide");
+});
+
+menuClose.addEventListener("click", () => {
+    menu.classList.remove("visible");
+    menuClose.classList.add("pressed");
+    menuOpen.classList.remove("pressed");
+    document.body.classList.remove("hide");
+});
