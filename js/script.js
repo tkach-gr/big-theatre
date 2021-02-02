@@ -364,10 +364,11 @@ class SliderTransformer {
 }
 
 class SliderBuilder {
-    constructor(sliderElement, breakpoint) {
+    constructor(sliderElement, breakpoint, minpoint) {
         this.slider = null;
         this.sliderElement = sliderElement;
         this.breakpoint = breakpoint;
+        this.minpoint = minpoint;
     }
 
     createSlider() {
@@ -378,6 +379,10 @@ class SliderBuilder {
     }
     
     resizeSlider() {
+        if(this.minpoint >= document.body.clientWidth) {
+            return;
+        }
+
         if(this.slider === null && this.breakpoint === undefined) {
             this.createSlider(this.sliderElement);
             return;
@@ -408,7 +413,7 @@ let sliderBuilder = new SliderBuilder(sliderElement);
 sliderBuilder.build();
 
 let showDisplay = document.getElementById("show-display");
-let showSliderBuilder = new SliderBuilder(showDisplay);
+let showSliderBuilder = new SliderBuilder(showDisplay, undefined, 1340);
 showSliderBuilder.build();
 
 let partnersList = document.getElementById("partners-list");
@@ -435,7 +440,6 @@ function closeMenu(e) {
     if(e.target === menu || e.target === menuOpen || e.target == menuClose) {
         return;
     }
-    console.log(e.target)
 
     menu.classList.remove("visible");
     menuClose.classList.add("pressed");
