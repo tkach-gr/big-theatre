@@ -420,16 +420,30 @@ let menuOpen = document.getElementById("menu-open");
 let menuClose = document.getElementById("menu-close");
 let menu = document.getElementById("menu");
 
-menuOpen.addEventListener("click", () => {
+function openMenu(e) {
+    e.stopImmediatePropagation();
+
     menu.classList.add("visible");
     menuOpen.classList.add("pressed");
     menuClose.classList.remove("pressed");
     document.body.classList.add("hide");
-});
+    document.body.addEventListener("click", closeMenu);
 
-menuClose.addEventListener("click", () => {
+}
+
+function closeMenu(e) {
+    if(e.target === menu || e.target === menuOpen || e.target == menuClose) {
+        return;
+    }
+    console.log(e.target)
+
     menu.classList.remove("visible");
     menuClose.classList.add("pressed");
     menuOpen.classList.remove("pressed");
     document.body.classList.remove("hide");
-});
+}
+
+menuOpen.addEventListener("click", openMenu);
+
+menuClose.addEventListener("click", closeMenu);
+
