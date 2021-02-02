@@ -413,8 +413,14 @@ let sliderBuilder = new SliderBuilder(sliderElement);
 sliderBuilder.build();
 
 let showDisplay = document.getElementById("show-display");
+let prevShowBtn = document.getElementById("prev-show-btn");
+let nextShowBtn = document.getElementById("next-show-btn");
 let showSliderBuilder = new SliderBuilder(showDisplay, undefined, 1340);
+let prevShow = slider => slider.movePoint(-350, true);
+let nextShow = slider => slider.movePoint(350, true);
 showSliderBuilder.build();
+prevShowBtn.addEventListener("click", () => prevShow(showSliderBuilder.slider));
+nextShowBtn.addEventListener("click", () => nextShow(showSliderBuilder.slider));
 
 let partnersList = document.getElementById("partners-list");
 let partnersListBuilder = new SliderBuilder(partnersList, 1340);

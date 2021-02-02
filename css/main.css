@@ -475,6 +475,7 @@ a {
 .show-diplay__slider .slider__point {
     width: 350px;
     height: 490px;
+    transition: left 0.3s ease;
 }
 
 .new-shows__menu {
